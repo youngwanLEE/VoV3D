@@ -1,0 +1,71 @@
+TRAIN:
+  ENABLE: True
+  DATASET: ssv2
+  BATCH_SIZE: 64
+  EVAL_PERIOD: 2
+  CHECKPOINT_PERIOD: 20
+  AUTO_RESUME: True
+  CHECKPOINT_FILE_PATH: "output/pretrained/vov3d_L_k400.pth"
+TEST:
+  ENABLE: True
+  DATASET: ssv2
+  BATCH_SIZE: 64
+  # 6-views
+  NUM_ENSEMBLE_VIEWS: 2
+  NUM_SPATIAL_CROPS: 3
+  # single clip & single crop
+#  NUM_ENSEMBLE_VIEWS: 1
+#  NUM_SPATIAL_CROPS: 1
+DATA:
+  NUM_FRAMES: 32
+  TRAIN_JITTER_SCALES: [256, 320]
+  TRAIN_CROP_SIZE: 224
+  TEST_CROP_SIZE: 256
+  INPUT_CHANNEL_NUM: [3]
+  INV_UNIFORM_SAMPLE: True
+  RANDOM_FLIP: False
+  REVERSE_INPUT_CHANNEL: True
+  PATH_TO_DATA_DIR: /home/lsrock1/data/sth-sth-v2/20bn-something-something-v2-SF-frames
+  PATH_PREFIX: /home/lsrock1/data/sth-sth-v2/20bn-something-something-v2-SF-frames
+VOV3D:
+  DEPTH: 70
+  TRANS_FUNC: t_osa_2plus1_transform
+  NUM_CONV: 5
+  INNER_CH: 48
+  TEMPORAL_DILATIONS: [[1], [1], [1], [1]]
+RESNET:
+  ZERO_INIT_FINAL_BN: True
+  NUM_BLOCK_TEMP_KERNEL: [[1],[1],[1],[1]]
+  SPATIAL_STRIDES: [[2], [2], [2], [2]]
+BN:
+  USE_PRECISE_STATS: True
+  NUM_BATCHES_PRECISE: 200
+  NORM_TYPE: sync_batchnorm
+  NUM_SYNC_DEVICES: 4
+SOLVER:
+  BASE_LR: 0.05 
+  LR_POLICY: steps_with_relative_lrs
+  LRS: [1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
+  STEPS: [0, 35, 45]
+  MAX_EPOCH: 50
+  BASE_LR_SCALE_NUM_SHARDS: True
+  MOMENTUM: 0.9
+  WEIGHT_DECAY: 5e-5
+  WARMUP_EPOCHS: 0.19
+  WARMUP_START_LR: 0.0001
+  OPTIMIZING_METHOD: sgd
+MODEL:
+  NUM_CLASSES: 174
+  ARCH: vov3d
+  MODEL_NAME: VoV3D
+  LOSS_FUNC: cross_entropy
+  DROPOUT_RATE: 0.5
+DATA_LOADER:
+  NUM_WORKERS: 8
+  PIN_MEMORY: True
+NUM_GPUS: 8
+RNG_SEED: 0
+LOG_MODEL_INFO: True
+TENSORBOARD:
+  ENABLE: True
+OUTPUT_DIR: output/SSv2/vov3d/VoV3D_L_F32_FineTuneK400
