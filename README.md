@@ -128,11 +128,11 @@ For Something-Something-V2,
 ```shell
 cd VoV3D
 mkdir -p output/pretrained
-wget https://dl.dropbox.com/s/ah2azwbocxro9qa/vov3d_L_k400_weight.pth
+wget https://dl.dropbox.com/s/lzmq8d4dqyj8fj6/vov3d_L_k400.pth
 
 python tools/run_net.py \
   --cfg configs/SSv2/vov3d/finetune/vov3d_L_F16.yaml \
-  TRAIN.CHECKPOINT_FILE_PATH path/to/the/pretrained/vov3d_L_k400_weight.pth \
+  TRAIN.CHECKPOINT_FILE_PATH path/to/the/pretrained/vov3d_L_k400.pth \
   DATA.PATH_TO_DATA_DIR path/to/your/ssv2 \
   DATA.PATH_PREFIX path/to/your/ssv2
 ```
