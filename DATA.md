@@ -5,7 +5,7 @@ Since some urls of [Kinetics-400 dataset](https://github.com/activitynet/Activit
 Alternatively, we downloaded the dataset via a link from the [facebookresearch/video-nonlocal-net#67](https://github.com/facebookresearch/video-nonlocal-net/issues/67).\
 However, the link is also expired and thus we share our dataset link.
 
-[[`Kinetics-400 dataset link`](https://dl.dropbox.com/s/zda3dfkp52eklvn/compress.tar.gz)]
+[[`Kinetics-400 dataset link`](https://dl.dropbox.com/s/419u0zljf2brsbt/compress.tar.gz)]
 - training set :  234,619 videos
 - validation set : 19,716 videos 
 
