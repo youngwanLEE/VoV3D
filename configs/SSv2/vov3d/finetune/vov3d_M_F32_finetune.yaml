@@ -30,8 +30,8 @@ DATA:
 VOV3D:
   DEPTH: 31
   TRANS_FUNC: t_osa_2plus1_transform
-  NUM_CONV: 4
-  INNER_CH: 48
+  NUM_CONV: 5
+  INNER_CH: 40
   TEMPORAL_DILATIONS: [[1], [1], [1], [1]]
 RESNET:
   ZERO_INIT_FINAL_BN: True

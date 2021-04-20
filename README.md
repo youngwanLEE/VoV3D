@@ -7,12 +7,13 @@ VoV3D is an efficient and effective 3D backbone network for temporal modeling im
 
 
 > **[Diverse Temporal Aggregation and Depthwise Spatiotemporal Factorization for Efficient Video Classification](https://arxiv.org/abs/2012.00317)**<br>
-> [Youngwan Lee](https://github.com/youngwanLEE), Hyung-Il Kim, Kimin Yun, and Jinyoung Moon<br>
+> [Youngwan Lee](https://github.com/youngwanLEE), Hyung-Il Kim, Kimin Yun, and Jinyoung Moonk<br>
 > Electronics and Telecommunications Research Institute ([ETRI](https://www.etri.re.kr/eng/main/main.etri))<br>
 > pre-print : https://arxiv.org/abs/2012.00317
 
 <div align="center">
-  <img src="https://dl.dropbox.com/s/v5v8in1x0womk2a/github_figure.jpg" width="850px" />
+<!--   <img src="https://dl.dropbox.com/s/v5v8in1x0womk2a/github_figure.jpg" width="850px" /> -->
+  <img src="https://dl.dropbox.com/s/7ylvmnjoj4e2e8a/architecture.jpg" width="850px" />
 </div>
 
 
@@ -42,13 +43,13 @@ If you change `NUM_GPUS` or `TRAIN.BATCH_SIZE` values, you have to adjust `BASE_
 | [TEA](https://github.com/Phoenix1327/tea-action-recognition)                                |   R-50   |    IM    |   16   |  24.4M |  70x30  |   52.3   |   81.9   |                                              -                                             |
 | [ip-CSN-152](https://github.com/facebookresearch/VMZ/tree/master/c2)                        |     -    |     -    |   32   |  29.7M | 74.0x10 |   49.3   |     -    |                                              -                                             |
 | [X3D](configs/SSv1/x3d/x3d_M.yaml)                                                          |     M    |     -    |   16   |  3.3M  |  6.1x6  |   46.4   |   75.3   |         [`link`](https://dl.dropbox.com/s/lb9uvj4tl19xzmn/x3d_M_ssv1.pth)                  |
-| **VoV3D**                                                                                   |     M    |     -    |   16   |  3.3M  |  5.7x6  |   48.1   |   76.9   |         [`link`](https://dl.dropbox.com/s/usbcudmhpknqvtd/vov3d_M_f16_ssv1.pth)            |
-| **VoV3D**                                                                                   |     M    |     -    |   32   |  3.3M  |  11.5x6 |   49.8   |   78.0   |         [`link`](https://dl.dropbox.com/s/fvet69zyeswe25v/vov3d_M_f32_ssv1.pth)            |
-| **VoV3D**                                                                                   |     M    |   K-400  |   32   |  3.3M  |  11.5x6 |   52.6   |   80.4   |         [`link`](https://etri.gov-dooray.com/share/drive-files/kdhawuidbrbd.C59lPfB2Toul7wcFMk1yeQ)          |
-| [X3D](configs/SSv1/x3d/x3d_L.yaml)                                                          |     L    |     -    |   16   |  5.6M  |  9.1x6  |   47.0   |   76.4   |         [`link`](https://dl.dropbox.com/s/yixwwfv6mv2bpnd/x3d_L_ssv1.pth)                  |
-| **VoV3D**                                                                                   |     L    |     -    |   16   |  5.8M  |  9.3x6  |   49.5   |   78.0   |         [`link`](https://dl.dropbox.com/s/bdjam5tyaedkczl/vov3d_L_f16_ssv1.pth)            |
-| **VoV3D**                                                                                   |     L    |     -    |   32   |  5.8M  |  20.9x6 |   50.6   |   78.7   |         [`link`](https://dl.dropbox.com/s/g6lc5sj8h7f2r5v/vov3d_L_f32_ssv1.pth)            |
-| **VoV3D**                                                                                   |     L    |   K-400  |   32   |  5.8M  |  20.9x6 | **54.9** | **82.3** |         [`link`](https://etri.gov-dooray.com/share/drive-files/kdhawuidbrbd.r2fJ4HSDSWmFYNo1ARZuHQ)          |
+| **VoV3D**                                                                                   |     M    |     -    |   16   |  3.2M  |  6.4x6  |   49.0   |   78.2   |         [`link`](https://dl.dropbox.com/s/usbcudmhpknqvtd/vov3d_M_f16_ssv1.pth)            |
+| **VoV3D**                                                                                   |     M    |     -    |   32   |  3.2M  |  12.8x6 |   50.1   |   79.2   |         [`link`](https://dl.dropbox.com/s/fvet69zyeswe25v/vov3d_M_f32_ssv1.pth)            |
+| **VoV3D**                                                                                   |     M    |   K-400  |   32   |  3.2M  |  12.8x6 |   53.3   |   81.2   |         [`link`](https://dl.dropbox.com/s/7qzdrv7p2l12mor/vov3d_M_f32_finetune_ssv1.pth)          |
+| [X3D](configs/SSv1/x3d/x3d_L.yaml)                                                          |     L    |     -    |   16   |  5.6M  |  12.0x6  |   47.1   |   76.5   |         [`link`](https://dl.dropbox.com/s/yixwwfv6mv2bpnd/x3d_L_ssv1.pth)                  |
+| **VoV3D**                                                                                   |     L    |     -    |   16   |  5.8M  |  12.1x6  |   49.5   |   78.0   |         [`link`](https://dl.dropbox.com/s/bdjam5tyaedkczl/vov3d_L_f16_ssv1.pth)            |
+| **VoV3D**                                                                                   |     L    |     -    |   32   |  5.8M  |  24.3x6 |   50.6   |   78.7   |         [`link`](https://dl.dropbox.com/s/g6lc5sj8h7f2r5v/vov3d_L_f32_ssv1.pth)            |
+| **VoV3D**                                                                                   |     L    |   K-400  |   32   |  5.8M  |  24.3x6 | **54.7** | **82.0** |         [`link`](https://dl.dropbox.com/s/4q2fupr3gcht1ik/vov3d_L_f32_finetune_ssv1.pth)          |
 
 
 ### Something-Something-V2
@@ -59,26 +60,25 @@ If you change `NUM_GPUS` or `TRAIN.BATCH_SIZE` values, you have to adjust `BASE_
 | TSM+[TPN](https://github.com/decisionforce/TPN/blob/master/MODELZOO.md#something-something)                   |   R-50   |    IM    |    8   |   N/A  |   N/A   |   64.7   |     -    |                      [`link`](https://github.com/decisionforce/TPN/blob/master/MODELZOO.md#something-something)                     |
 | [TEA](https://github.com/Phoenix1327/tea-action-recognition)                                                  |   R-50   |    IM    |   16   |  24.4M |  70x30  |   65.1   |   89.9   |                                             -                                                                                       |
 | [SlowFast 16x8](https://github.com/facebookresearch/SlowFast/blob/master/MODEL_ZOO.md#something-something-v2) |   R-50   |   K-400  |   64   |  34.0M | 131.4x6 |   63.9   |   88.2   | [`link`](https://dl.fbaipublicfiles.com/pyslowfast/pyslowfast/model_zoo/multigrid/model_zoo/Kinetics/SLOWFAST_8x8_R50_stepwise.pkl) |
-| [X3D](configs/SSv2/x3d/x3d_M.yaml)                                                                            |     M    |     -    |   16   |  3.3M  |  6.1x6  |   63.0   |   87.9   |                              [`link`](https://dl.dropbox.com/s/b6gjywzrn85sa89/x3d_M_ssv2.pth)                                      |
-| **VoV3D**                                                                                                     |     M    |     -    |   16   |  3.3M  |  5.7x6  |   63.2   |   88.2   |                              [`link`](https://dl.dropbox.com/s/hz34ltdl6iukdxc/vov3d_M_f16_ssv2.pth)                                |
-| **VoV3D**                                                                                                     |     M    |     -    |   32   |  3.3M  |  11.5x6 |   64.2   |   88.8   |                              [`link`](https://dl.dropbox.com/s/z6qtyjgf0v13jnq/vov3d_M_f32_ssv2.pth)                                |
-| **VoV3D**                                                                                                     |     M    |   K-400  |   32   |  3.3M  |  11.5x6 |   65.2   |   89.4   |                              [`link`](https://etri.gov-dooray.com/share/drive-files/kdhawuidbrbd.PHQw3KwbRI-lIcopWjm-ew)            |
-| [X3D](configs/SSv2/x3d/x3d_L.yaml)                                                                            |     L    |     -    |   16   |  5.6M  |  9.1x6  |   62.7   |   87.7   |                              [`link`](https://dl.dropbox.com/s/iaqwbejrkbd7372/x3d_L_ssv2.pth)                                      |
-| **VoV3D**                                                                                                     |     L    |     -    |   16   |  5.8M  |  9.3x6  |   64.1   |   88.6   |                              [`link`](https://dl.dropbox.com/s/678efl8zyrmq7ch/vov3d_L_f16_ssv2.pth)                                |
-| **VoV3D**                                                                                                     |     L    |     -    |   32   |  5.8M  |  20.9x6 |   65.8   |   89.5   |                              [`link`](https://dl.dropbox.com/s/f4330e5htdiwqa5/vov3d_L_f32_ssv2.pth)                                |
-| **VoV3D**                                                                                                     |     L    |   K-400  |   32   |  5.8M  |  20.9x6 | **67.3** | **90.5** |                              [`link`](https://etri.gov-dooray.com/share/drive-files/kdhawuidbrbd.pEg57hjpSkOp2boe1oNZvQ)                            |
+| [X3D](configs/SSv2/x3d/x3d_M.yaml)                                                                            |     M    |     -    |   16   |  3.3M  |  6.1x6  |   63.1   |   88.0   |                              [`link`](https://dl.dropbox.com/s/b6gjywzrn85sa89/x3d_M_ssv2.pth)                                      |
+| **VoV3D**                                                                                                     |     M    |     -    |   16   |  3.2M  |  6.4x6  |   63.6   |   88.6   |                              [`link`](https://dl.dropbox.com/s/hz34ltdl6iukdxc/vov3d_M_f16_ssv2.pth)                                |
+| **VoV3D**                                                                                                     |     M    |     -    |   32   |  3.2M  |  12.8x6 |   64.3   |   88.9   |                              [`link`](https://dl.dropbox.com/s/z6qtyjgf0v13jnq/vov3d_M_f32_ssv2.pth)                                |
+| **VoV3D**                                                                                                     |     M    |   K-400  |   32   |  3.2M  |  12.8x6 |   65.8   |   89.6   |                              [`link`](https://dl.dropbox.com/s/dpkbx6wjkay7ret/vov3d_M_f32_finetune_ssv2.pth)            |
+| [X3D](configs/SSv2/x3d/x3d_L.yaml)                                                                            |     L    |     -    |   16   |  5.6M  |  12.0x6  |   62.7   |   87.8   |                              [`link`](https://dl.dropbox.com/s/iaqwbejrkbd7372/x3d_L_ssv2.pth)                                      |
+| **VoV3D**                                                                                                     |     L    |     -    |   16   |  5.8M  |  12.1x6  |   64.5   |   88.7   |                              [`link`](https://dl.dropbox.com/s/678efl8zyrmq7ch/vov3d_L_f16_ssv2.pth)                                |
+| **VoV3D**                                                                                                     |     L    |     -    |   32   |  5.8M  |  24.3x6 |   65.9   |   89.6   |                              [`link`](https://dl.dropbox.com/s/f4330e5htdiwqa5/vov3d_L_f32_ssv2.pth)                                |
+| **VoV3D**                                                                                                     |     L    |   K-400  |   32   |  5.8M  |  24.3x6 | **67.4** | **90.5** |                              [`link`](https://dl.dropbox.com/s/sly5orjsi2zl84a/vov3d_L_f32_finetune_ssv2.pth)                            |
 
 ### Kinetics-400
 
 | Model                                                                                                             | Backbone | Pretrain | #Frame | Param. |  GFLOPs | Top-1 | Top-5 |                                             weight                                             |
 |-------------------------------------------------------------------------------------------------------------------|:--------:|:--------:|:------:|:------:|:-------:|:-----:|:-----:|:----------------------------------------------------------------------------------------------:|
-| [X3D (PySlowFast, 300e)](https://github.com/facebookresearch/SlowFast/blob/master/configs/Kinetics/X3D_M.yaml)    |     M    |     -    |   16   |  3.8M  |  6.2x30 |  76.0 |  92.3 |           [`link`](https://dl.fbaipublicfiles.com/pyslowfast/x3d_models/x3d_m.pyth)            |
-| [X3D (our, 256e)](configs/Kinetics/x3d/X3D_M_256e.yaml)                                                           |     M    |     -    |   16   |  3.8M  |  6.2x30 |  75.0 |  92.1 |           [`link`](https://dl.dropbox.com/s/s87lnn7ch4a6e47/x3d_M_256e_k400.pth)               |
-| **VoV3D**                                                                                                         |     M    |     -    |   16   |  3.8M  |  4.4x30 |  73.9 |  91.6 |           [`link`](https://dl.dropbox.com/s/hpk172nbvm3w5p1/vov3d_M_k400.pth)                  |
-| [X3D (PySlowfast)](https://github.com/facebookresearch/SlowFast/blob/master/configs/Kinetics/X3D_L.yaml)          |     L    |     -    |   16   |  6.1M  | 24.8x30 |  77.5 |  92.9 |           [`link`](https://dl.fbaipublicfiles.com/pyslowfast/x3d_models/x3d_l.pyth)            |
-| **VoV3D**                                                                                                         |     L    |     -    |   16   |  6.2M  |  9.3x30 |  76.3 |  92.9 |           [`link`](https://dl.dropbox.com/s/lzmq8d4dqyj8fj6/vov3d_L_k400.pth)                  |
+| [X3D](configs/Kinetics/x3d/X3D_M_256e.yaml)                                                           |     M    |     -    |   16   |  3.8M  |  6.2x30 |  75.1 |  92.2 |           [`link`](https://dl.dropbox.com/s/s87lnn7ch4a6e47/x3d_M_256e_k400.pth)               |
+| **VoV3D**                                                                                                         |     M    |     -    |   16   |  3.7M  |  6.4x30 |  74.7 |  92.1 |           [`link`](https://dl.dropbox.com/s/8qbewp3teb51jfb/vov3d_M_k400_weight.pth)                  |
+| [X3D]((configs/Kinetics/x3d/X3D_L_256scale_256e.yaml))          |     L    |     -    |   16   |  6.1M  | 9.1x30 |  76.1 |  92.6 |           [`link`](https://dl.dropbox.com/s/jhw5439tyvmtjzp/x3d_L_256e_256scale_k400.pth)            |
+| **VoV3D**                                                                                                         |     L    |     -    |   16   |  6.2M  |  9.3x30 |  76.3 |  92.9 |           [`link`](https://dl.dropbox.com/s/ah2azwbocxro9qa/vov3d_L_k400_weight.pth)                  |
 
-*We note that since X3D-M (PySlowFast) was trained for 300 epochs, we re-train the X3D-M (our, 256e) with the same 256 epochs with VoV3D-M.
+*For fair comparison, we train both X3D and VoV3D under the same environment and training protocols such as GPU server, training set, scale size [256, 320], and 256 epochs.
 
 ## Installation & Data Preparation
 Please refer to [INSTALL.md](INSTALL.md) for installation and [DATA.md](DATA.md) for data preparation. \
@@ -128,11 +128,11 @@ For Something-Something-V2,
 ```shell
 cd VoV3D
 mkdir -p output/pretrained
-wget https://dl.dropbox.com/s/lzmq8d4dqyj8fj6/vov3d_L_k400.pth
+wget https://dl.dropbox.com/s/ah2azwbocxro9qa/vov3d_L_k400_weight.pth
 
 python tools/run_net.py \
   --cfg configs/SSv2/vov3d/finetune/vov3d_L_F16.yaml \
-  TRAIN.CHECKPOINT_FILE_PATH path/to/the/pretrained/vov3d_L_k400.pth \
+  TRAIN.CHECKPOINT_FILE_PATH path/to/the/pretrained/vov3d_L_k400_weight.pth \
   DATA.PATH_TO_DATA_DIR path/to/your/ssv2 \
   DATA.PATH_PREFIX path/to/your/ssv2
 ```

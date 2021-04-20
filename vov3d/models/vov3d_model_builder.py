@@ -31,7 +31,7 @@ _POOL1 = {
 
 # Number of blocks for different stages given the model depth.
 # 31 - medium | 70 - large model, respectively.
-_VOV3D_STAGE_DEPTH = {31: (1, 1, 2, 2), 70: (1, 2, 5, 3)}
+_VOV3D_STAGE_DEPTH = {31: (1, 2, 3, 2), 70: (1, 2, 5, 3)}
 
 
 @MODEL_REGISTRY.register()
