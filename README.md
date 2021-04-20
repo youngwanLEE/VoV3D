@@ -7,7 +7,7 @@ VoV3D is an efficient and effective 3D backbone network for temporal modeling im
 
 
 > **[Diverse Temporal Aggregation and Depthwise Spatiotemporal Factorization for Efficient Video Classification](https://arxiv.org/abs/2012.00317)**<br>
-> [Youngwan Lee](https://github.com/youngwanLEE), Hyung-Il Kim, Kimin Yun, and Jinyoung Moonk<br>
+> [Youngwan Lee](https://github.com/youngwanLEE), Hyung-Il Kim, Kimin Yun, and Jinyoung Moon<br>
 > Electronics and Telecommunications Research Institute ([ETRI](https://www.etri.re.kr/eng/main/main.etri))<br>
 > pre-print : https://arxiv.org/abs/2012.00317
 
